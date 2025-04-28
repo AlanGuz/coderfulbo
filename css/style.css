@@ -1,0 +1,375 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*font-family: "Lilita One", sans-serif;*/
+/*font-family: "Nunito", sans-serif;*/
+/*font-family: "Oswald", sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:cornsilk;
+}
+header{
+    z-index: 11;
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    position: sticky;
+    top: 0%;
+}
+.navencabezado ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+header img{
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;  
+}
+.navencabezado{
+    width: 40%;
+} 
+.navencabezado li{
+    display: flex;
+    border-bottom: 10%;
+    height: 50%;
+}
+.navencabezado a{
+    font-family: "Oswald", sans-serif;
+    border: 2px solid rgb(108, 136, 60); 
+    background-color: rgb(76, 95, 42);
+    color:white;
+    font-size: 120%;
+    margin-right: 12px;
+    text-decoration: none;
+    border-radius: 45%;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+                                              /*encabezado*/
+.resultados{
+    font-family: "Oswald", sans-serif;
+    color:white;
+    font-size: 190%;
+    text-align: center;
+    background-color: darkolivegreen;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.banner1{
+    text-align: center;
+    margin-bottom: 12%;
+    background-color:bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.banner2{
+    text-align: center;
+    margin-bottom: 12%;
+    background-color:bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner3{
+    text-align: center;
+    margin-bottom: 12%;
+    background-color:bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}                                               /*index*/
+footer{
+    display: grid;
+    grid-template-areas: 
+    "redes . copy";
+    grid-template-columns: 30% 30% 30%;
+}
+.logosredes img{
+    grid-area: redes;
+    width: 40px;
+
+}
+.copyright{
+    grid-area: copy;
+    text-align: right;
+}
+                                                 /*footer*/
+.fotoscompe{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    "foto1 . foto2 . foto3"
+    "foto4 . foto5 . foto6";
+    grid-template-columns: 25% 5% 25% 5% 25%;
+    grid-template-rows: 300px 300px ;
+    justify-content: center;
+}
+.fotoscompe img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.Libertadores{
+    grid-area: foto1;
+}
+.LigaArgentina{
+    grid-area: foto2;
+}
+.PremierLeague{
+    grid-area: foto3;
+}
+.LaLiga{
+    grid-area: foto4;
+}
+.Ligue1{
+    grid-area: foto5;
+}
+.Champions{
+    grid-area: foto6;
+}
+
+
+                                            /*competencias*/
+.bodytablas{
+    background-color: #111217;
+}
+.titulotablas{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Lilita One", sans-serif ;
+    color: bisque;
+}
+.tablas{
+    justify-items: center;
+    margin-top: 50px;
+}
+                                              /*tablas*/
+.nav-link{
+    color: white;
+}                                             
+.nav {
+    margin-top: 40px;
+}
+.navnoticias a{
+    border: 2px none black; 
+    color:white;
+    font-size: 70%;
+    flex-direction: row;   
+    padding: 1px;
+    margin-right: 120px;
+    width: 110px;
+    text-decoration: none;
+    
+}
+.navnoticias ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;     
+    display: flex;
+    text-align:center;
+    justify-content: center; 
+    padding: 3px;  
+    background-color: grey;
+    list-style-type: none;
+    justify-items: center;
+
+}                                             
+.cuerponoticias{
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "img1 texto1 texto1"
+    "img2 img2 texto2"
+    "img3 texto3 img4";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 70px 320px 350px 230px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+.cuerponoticias img{
+    width: 100%;
+    height: 97%;
+    border-radius: 10px;
+}
+.titulonoti{
+    grid-area: titulo;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.imgnoti1{
+    grid-area: img1;
+}
+
+.textonoti1 {
+    grid-area: texto1;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+.imgnoti2{
+    grid-area: img2;
+    width: 200%;
+}
+.textonoti2{
+    grid-area: texto2;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.imgnoti3{
+    grid-area: img3;
+}
+.textonoti3{
+    grid-area: texto3;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.imgnoti4{
+    grid-area: img4;
+}
+.cuerponoticias{
+    text-align: center;
+    
+}
+
+                                             /*noticias*/
+.card{
+    z-index: 10;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card img{
+    width: 250px;
+    border-radius: 10%;
+}                                         
+.votacion{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.nombres p{
+    font-family: "Nunito", sans-serif;
+    background-color: bisque;
+    text-align: center;
+}
+                                              /*vota*/
+                       /*RESPONSIVE*/
+@media (max-width:480px) {
+    header{
+        flex-direction: column;
+    }
+    header img{
+        width: 45px;
+        margin-left: 195px;
+    }
+    .navencabezado{
+        width: 100%;
+        padding-bottom: 0.2px;
+    }
+    .navencabezado ul{
+        justify-content: baseline;
+        align-items: center;    
+        padding: 12px;
+        padding-bottom: 5PX;
+        margin-top: 10px    ;
+    }
+    .navencabezado a { 
+        border: none;
+        background-color: darkolivegreen;
+    }
+    /*RESPONSIVE HOME*/
+    .cuerpohome img{
+        width: 410px;
+    }
+    .cuerpohome{
+        padding: 10px;
+    }
+    /*RESPONSIVE TABLAS*/
+    .tablas img{
+        width: 420px;
+    }
+    /*RESPONSIVE COMPETENCIAS*/
+    .fotoscompe{
+        grid-template-areas: 
+        "foto1""foto2"
+        "foto3""foto4"
+        "foto5""foto6"
+        ;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+    }
+    .fotoscompe img{
+        margin-left: 100px;
+        height: 200px;
+
+    }
+                 /*RESPONSIVE NOTICIAS*/
+    .titulonoti{
+        margin-top: 2px;
+    }
+    .cuerponoticias{
+        grid-template-areas: 
+        "titulo"
+        "img1"
+        "texto1"
+        "img4"
+        "texto2"
+        "texto3"
+        "img2"
+        ;
+        grid-template-columns: 90%;
+        grid-template-rows:70px 320px 500px 250px 250px 150px 195px;    
+    }
+    .textonoti1{
+        font-size: 20px;
+    }
+    .textonoti2{
+        font-size: 17px;
+    }
+    .textonoti3{
+        font-size: 17px;
+        text-align: left;
+        margin-left: 32px;
+    }
+    .imgnoti2{
+        margin-bottom: 10px;
+    }
+    .imgnoti3{
+        display: none;
+    }
+                                          /*RESPONSIVE VOTA*/
+    .row{
+        padding: 10px;
+    }                   
+                /*RESPONSIVE FOOTER*/
+    footer{
+        grid-template-areas: 
+        ". redes copy";
+        grid-template-columns: 30% 30% 30%;
+    }
+    .logosredes img{
+        width: 15px;
+        margin-left: 23px;
+    }
+    .copyright{
+        font-size: 8px;
+    }            
+}
