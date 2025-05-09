@@ -117,22 +117,22 @@ footer{
     border-radius: 50%;
     
 }
-.Libertadores{
+.libertadores{
     grid-area: foto1;
 }
-.LigaArgentina{
+.ligaargentina{
     grid-area: foto2;
 }
-.PremierLeague{
+.premierleague{
     grid-area: foto3;
 }
-.LaLiga{
+.laliga{
     grid-area: foto4;
 }
-.Ligue1{
+.ligue1{
     grid-area: foto5;
 }
-.Champions{
+.champions{
     grid-area: foto6;
 }
 
