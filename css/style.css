@@ -57,34 +57,7 @@ header img{
     margin-bottom: 5px;
 }
                                               /*encabezado*/
-.resultados{
-    font-family: "Oswald", sans-serif;
-    color:white;
-    font-size: 190%;
-    text-align: center;
-    background-color: darkolivegreen;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-.banner1{
-    text-align: center;
-    margin-bottom: 12%;
-    background-color:bisque;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.banner2{
-    text-align: center;
-    margin-bottom: 12%;
-    background-color:bisque;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.banner3{
-    text-align: center;
-    margin-bottom: 12%;
-    background-color:bisque;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}                                               /*index*/
+                                              /*index*/
 footer{
     display: grid;
     grid-template-areas: 
@@ -114,8 +87,7 @@ footer{
 .fotoscompe img{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
 .libertadores{
     grid-area: foto1;
@@ -137,7 +109,7 @@ footer{
 }
 
 
-                                            /*competencias*/
+    /*competencias*/
 .bodytablas{
     background-color: #111217;
 }
@@ -152,36 +124,14 @@ footer{
     justify-items: center;
     margin-top: 50px;
 }
-                                              /*tablas*/
+ /*tablas*/
 .nav-link{
     color: white;
 }                                             
 .nav {
     margin-top: 40px;
 }
-.navnoticias a{
-    border: 2px none black; 
-    color:white;
-    font-size: 70%;
-    flex-direction: row;   
-    padding: 1px;
-    margin-right: 120px;
-    width: 110px;
-    text-decoration: none;
-    
-}
-.navnoticias ul{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5px;     
-    display: flex;
-    text-align:center;
-    justify-content: center; 
-    padding: 3px;  
-    background-color: grey;
-    list-style-type: none;
-    justify-items: center;
-
-}                                             
+                                         
 .cuerponoticias{
     margin-top: 70px;
     display: grid;
@@ -246,7 +196,7 @@ footer{
     
 }
 
-                                             /*noticias*/
+ /*noticias*/
 .card{
     z-index: 10;
     margin-left: 60px;
@@ -257,19 +207,7 @@ footer{
     width: 250px;
     border-radius: 10%;
 }                                         
-.votacion{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
 
-}
-.nombres p{
-    font-family: "Nunito", sans-serif;
-    background-color: bisque;
-    text-align: center;
-}
                                               /*vota*/
                        /*RESPONSIVE*/
 @media (max-width:480px) {

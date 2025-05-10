@@ -1,0 +1,232 @@
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/*font-family: "Lilita One", sans-serif;*/
+/*font-family: "Nunito", sans-serif;*/
+/*font-family: "Oswald", sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: cornsilk;
+}
+
+header {
+  z-index: 11;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  position: sticky;
+  top: 0%;
+}
+header .navencabezado {
+  width: 40%;
+}
+header .navencabezado ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+header .navencabezado ul li {
+  display: flex;
+  border-bottom: 10%;
+  height: 50%;
+}
+header .navencabezado ul li a {
+  font-family: "Oswald", sans-serif;
+  border: 2px solid rgb(108, 136, 60);
+  background-color: rgb(76, 95, 42);
+  color: white;
+  font-size: 120%;
+  margin-right: 12px;
+  text-decoration: none;
+  border-radius: 45%;
+  padding: 7px;
+  margin-bottom: 5px;
+}
+header img {
+  width: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-areas: "redes . copy";
+  grid-template-columns: 30% 30% 30%;
+}
+footer .logosredes img {
+  grid-area: redes;
+  width: 40px;
+}
+footer .copyright {
+  grid-area: copy;
+  text-align: right;
+}
+
+.nav {
+  margin-top: 40px;
+}
+
+.cuerponoticias {
+  margin-top: 70px;
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "img1 texto1 texto1" "img2 img2 texto2" "img3 texto3 img4";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 70px 320px 350px 230px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.cuerponoticias .titulonoti {
+  grid-area: titulo;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.cuerponoticias .textonoti1 {
+  grid-area: texto1;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+.cuerponoticias .textonoti2 {
+  grid-area: texto2;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.cuerponoticias .textonoti3 {
+  grid-area: texto3;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.cuerponoticias .imgnoti1 {
+  grid-area: img1;
+}
+.cuerponoticias .imgnoti1 img {
+  width: 100%;
+  height: 97%;
+  border-radius: 10px;
+}
+.cuerponoticias .imgnoti2 {
+  grid-area: img2;
+}
+.cuerponoticias .imgnoti2 img {
+  width: 200%;
+  height: 97%;
+  border-radius: 10px;
+}
+.cuerponoticias .imgnoti3 {
+  grid-area: img3;
+}
+.cuerponoticias .imgnoti3 img {
+  width: 100%;
+  height: 97%;
+  border-radius: 10px;
+}
+.cuerponoticias .imgnoti4 {
+  grid-area: img4;
+}
+.cuerponoticias .imgnoti4 img {
+  width: 100%;
+  height: 97%;
+  border-radius: 10px;
+}
+
+.bodytablas {
+  background-color: #111217;
+}
+.bodytablas .titulotablas {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  color: bisque;
+}
+.bodytablas .tablas {
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.fotoscompe {
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: "foto1 . foto2 . foto3" "foto4 . foto5 . foto6";
+  grid-template-columns: 25% 5% 25% 5% 25%;
+  grid-template-rows: 300px 300px;
+  justify-content: center;
+}
+.fotoscompe .libertadores {
+  grid-area: foto1;
+}
+.fotoscompe .libertadores img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fotoscompe .ligaargentina {
+  grid-area: foto2;
+}
+.fotoscompe .ligaargentina img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fotoscompe .premierleague {
+  grid-area: foto3;
+}
+.fotoscompe .premierleague img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fotoscompe .laliga {
+  grid-area: foto4;
+}
+.fotoscompe .laliga img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fotoscompe .ligue1 {
+  grid-area: foto5;
+}
+.fotoscompe .ligue1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fotoscompe .champions {
+  grid-area: foto6;
+}
+.fotoscompe .champions img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.card {
+  z-index: 10;
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card img {
+  width: 250px;
+  border-radius: 10%;
+}
+
+/*# sourceMappingURL=estilos.css.map */
