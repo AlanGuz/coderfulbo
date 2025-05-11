@@ -115,32 +115,24 @@ footer .copyright {
 }
 .cuerponoticias .imgnoti1 {
   grid-area: img1;
-}
-.cuerponoticias .imgnoti1 img {
   width: 100%;
   height: 97%;
   border-radius: 10px;
 }
 .cuerponoticias .imgnoti2 {
   grid-area: img2;
-}
-.cuerponoticias .imgnoti2 img {
-  width: 200%;
+  width: 100%;
   height: 97%;
   border-radius: 10px;
 }
 .cuerponoticias .imgnoti3 {
   grid-area: img3;
-}
-.cuerponoticias .imgnoti3 img {
   width: 100%;
   height: 97%;
   border-radius: 10px;
 }
 .cuerponoticias .imgnoti4 {
   grid-area: img4;
-}
-.cuerponoticias .imgnoti4 img {
   width: 100%;
   height: 97%;
   border-radius: 10px;
