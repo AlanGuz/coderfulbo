@@ -221,4 +221,92 @@ footer .copyright {
   border-radius: 10%;
 }
 
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 45px;
+    margin-left: 195px;
+  }
+  header .navencabezado {
+    width: 100%;
+    padding-bottom: 0.2px;
+  }
+  header .navencabezado ul {
+    justify-content: baseline;
+    align-items: center;
+    padding: 12px;
+    padding-bottom: 5PX;
+    margin-top: 10px;
+  }
+  header .navencabezado ul a {
+    border: none;
+    background-color: darkolivegreen;
+  }
+  /*RESPONSIVE HOME*/
+  .cuerpohome {
+    padding: 10px;
+  }
+  .cuerpohome img {
+    width: 410px;
+  }
+  /*RESPONSIVE TABLAS*/
+  .tablas img {
+    width: 400px;
+  }
+  /*RESPONSIVE COMPETENCIAS*/
+  .fotoscompe {
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+  }
+  .fotoscompe img {
+    margin-left: 100px;
+    height: 200px;
+  }
+  /*RESPONSIVE NOTICIAS*/
+  .titulonoti {
+    margin-top: 2px;
+  }
+  .cuerponoticias {
+    grid-template-areas: "titulo" "img1" "texto1" "img4" "texto2" "texto3" "img2";
+    grid-template-columns: 90%;
+    grid-template-rows: 70px 320px 500px 250px 250px 150px 195px;
+  }
+  .cuerponoticias .textonoti1 {
+    font-size: 20px;
+  }
+  .cuerponoticias .textonoti2 {
+    font-size: 17px;
+  }
+  .cuerponoticias .textonoti3 {
+    font-size: 17px;
+    text-align: left;
+    margin-left: 32px;
+  }
+  .cuerponoticias .imgnoti2 {
+    margin-bottom: 10px;
+  }
+  .cuerponoticias .imgnoti3 {
+    display: none;
+  }
+  /*RESPONSIVE VOTA*/
+  .row {
+    padding: 17px;
+  }
+  /*RESPONSIVE FOOTER*/
+  footer {
+    grid-template-areas: ". redes copy";
+    grid-template-columns: 30% 30% 30%;
+  }
+  footer .logosredes img {
+    width: 15px;
+    margin-left: 23px;
+  }
+  footer .copyright {
+    font-size: 8px;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
