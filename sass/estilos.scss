@@ -13,10 +13,10 @@
 html{
     background-color:cornsilk;
 }
-@import"./partials/header&footer";
-@import"./partials/index";
-@import"./partials/noticias";
-@import"./partials/tablas";
-@import"./partials/competencias";
-@import"./partials/vota";
-@import "./partials/mediaq";
+@use"./partials/headerfooter";
+@use"./partials/index";
+@use"./partials/noticias";
+@use"./partials/tablas";
+@use"./partials/competencias";
+@use"./partials/vota";
+@use "./partials/mediaq";
