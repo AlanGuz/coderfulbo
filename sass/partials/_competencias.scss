@@ -1,5 +1,5 @@
 .fotoscompe{
-    margin-top: 20px;
+    margin-top: 50px;
     display: grid;
     grid-template-areas: 
     "foto1 . foto2 . foto3"
@@ -7,52 +7,34 @@
     grid-template-columns: 25% 5% 25% 5% 25%;
     grid-template-rows: 300px 300px ;
     justify-content: center;
+    padding: 30px;
     .libertadores{
         grid-area: foto1;
         img{
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;    
+            width: 50%;
+            height: 50%;
+            border-radius: 50%; 
+            padding: 10px;   
         }
     }
     .ligaargentina{
-        grid-area: foto2;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;    
-        }
+        @extend .libertadores;
+        grid-area: foto2;       
     }
     .premierleague{
-        grid-area: foto3;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;    
-        }
+        @extend .libertadores;
+        grid-area: foto3;       
     }
     .laliga{
-        grid-area: foto4;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;    
-        }
+        @extend .libertadores;
+        grid-area: foto4;      
     }
     .ligue1{
-        grid-area: foto5;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;    
-        }
+        @extend .libertadores;
+        grid-area: foto5;    
     }
     .champions{
-        grid-area: foto6;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;    
-        }
+        @extend .libertadores;
+        grid-area: foto6;       
     }
 }

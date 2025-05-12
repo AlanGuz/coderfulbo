@@ -17,7 +17,7 @@ html {
 
 header {
   z-index: 11;
-  background-color: darkolivegreen;
+  background-image: linear-gradient(to right, darkolivegreen, rgb(67, 82, 41));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,8 +42,8 @@ header .navencabezado ul li {
 }
 header .navencabezado ul li a {
   font-family: "Oswald", sans-serif;
-  border: 2px solid rgb(108, 136, 60);
-  background-color: rgb(76, 95, 42);
+  border: none;
+  background-image: linear-gradient(to bottom, rgb(67, 82, 41), rgb(76, 95, 42));
   color: white;
   font-size: 120%;
   margin-right: 12px;
@@ -51,12 +51,37 @@ header .navencabezado ul li a {
   border-radius: 45%;
   padding: 7px;
   margin-bottom: 5px;
+  transition: 3s;
+}
+header .navencabezado ul li a:hover {
+  background-image: linear-gradient(to top, rgb(67, 82, 41), rgb(76, 95, 42));
 }
 header img {
   width: 80px;
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
+  animation-name: rotacion;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-delay: 2s;
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(100deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  75% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
 }
 
 footer {
@@ -154,60 +179,37 @@ footer .copyright {
 }
 
 .fotoscompe {
-  margin-top: 20px;
+  margin-top: 50px;
   display: grid;
   grid-template-areas: "foto1 . foto2 . foto3" "foto4 . foto5 . foto6";
   grid-template-columns: 25% 5% 25% 5% 25%;
   grid-template-rows: 300px 300px;
   justify-content: center;
+  padding: 30px;
 }
-.fotoscompe .libertadores {
+.fotoscompe .libertadores, .fotoscompe .champions, .fotoscompe .ligue1, .fotoscompe .laliga, .fotoscompe .premierleague, .fotoscompe .ligaargentina {
   grid-area: foto1;
 }
-.fotoscompe .libertadores img {
-  width: 100%;
-  height: 100%;
+.fotoscompe .libertadores img, .fotoscompe .champions img, .fotoscompe .ligue1 img, .fotoscompe .laliga img, .fotoscompe .premierleague img, .fotoscompe .ligaargentina img {
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
+  padding: 10px;
 }
 .fotoscompe .ligaargentina {
   grid-area: foto2;
 }
-.fotoscompe .ligaargentina img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
 .fotoscompe .premierleague {
   grid-area: foto3;
-}
-.fotoscompe .premierleague img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
 }
 .fotoscompe .laliga {
   grid-area: foto4;
 }
-.fotoscompe .laliga img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
 .fotoscompe .ligue1 {
   grid-area: foto5;
 }
-.fotoscompe .ligue1 img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
 .fotoscompe .champions {
   grid-area: foto6;
-}
-.fotoscompe .champions img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
 }
 
 .card {
@@ -220,7 +222,7 @@ footer .copyright {
   width: 250px;
   border-radius: 10%;
 }
-/*RESPONSIVE*/
+
 @media (max-width: 480px) {
   header {
     flex-direction: column;
@@ -229,18 +231,18 @@ footer .copyright {
     width: 45px;
     margin-left: 195px;
   }
-  .navencabezado {
+  header .navencabezado {
     width: 100%;
     padding-bottom: 0.2px;
   }
-  .navencabezado ul {
+  header .navencabezado ul {
     justify-content: baseline;
     align-items: center;
     padding: 12px;
     padding-bottom: 5PX;
     margin-top: 10px;
   }
-  .navencabezado ul a {
+  header .navencabezado ul a {
     border: none;
     background-color: darkolivegreen;
   }
@@ -274,37 +276,37 @@ footer .copyright {
     grid-template-columns: 90%;
     grid-template-rows: 70px 320px 500px 250px 250px 150px 195px;
   }
-  .textonoti1 {
+  .cuerponoticias .textonoti1 {
     font-size: 20px;
   }
-  .textonoti2 {
+  .cuerponoticias .textonoti2 {
     font-size: 17px;
   }
-  .textonoti3 {
+  .cuerponoticias .textonoti3 {
     font-size: 17px;
     text-align: left;
     margin-left: 32px;
   }
-  .imgnoti2 {
+  .cuerponoticias .imgnoti2 {
     margin-bottom: 10px;
   }
-  .imgnoti3 {
+  .cuerponoticias .imgnoti3 {
     display: none;
   }
   /*RESPONSIVE VOTA*/
   .row {
-    padding: 10px;
+    padding: 17px;
   }
   /*RESPONSIVE FOOTER*/
   footer {
     grid-template-areas: ". redes copy";
     grid-template-columns: 30% 30% 30%;
   }
-  .logosredes img {
+  footer .logosredes img {
     width: 15px;
     margin-left: 23px;
   }
-  .copyright {
+  footer .copyright {
     font-size: 8px;
   }
 }
