@@ -8,8 +8,6 @@
         color: bisque;
     }
     .tablas{
-        justify-items: center;
-        margin-top: 50px;
+        @include tablitas;
     }
-    
 }

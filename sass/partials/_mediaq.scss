@@ -38,17 +38,26 @@
     /*RESPONSIVE COMPETENCIAS*/
     .fotoscompe{
         grid-template-areas: 
-        "foto1""foto2"
-        "foto3""foto4"
-        "foto5""foto6"
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
         ;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(6,300px);
         justify-content: center;
-        img{
-        margin-left: 100px;
-        height: 200px;
+        .libertadores{
+            img{
+              margin-left: 10px;
+              width: 100%;
+              height: 110%;
+              padding: 100px;
+            }
         }
     }
+    
                  /*RESPONSIVE NOTICIAS*/
     .titulonoti{
         margin-top: 2px;
