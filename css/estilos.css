@@ -15,6 +15,7 @@
   justify-items: center;
   align-items: center;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 .cuerponoticias .titulonoti {
   grid-area: titulo;
@@ -25,7 +26,7 @@
 .cuerponoticias .textonoti1 {
   grid-area: texto1;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-left: 30px;
 }
 .cuerponoticias .textonoti2 {
@@ -126,10 +127,13 @@
   width: 250px;
   border-radius: 10%;
 }
+.card .btn {
+  background-color: darkolivegreen;
+}
 
 header {
   z-index: 11;
-  background-image: linear-gradient(to right, darkolivegreen, rgb(67, 82, 41));
+  background: radial-gradient(circle, rgb(22, 69, 17) 57%, rgb(55, 97, 20) 73%, rgb(103, 150, 62) 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -155,18 +159,18 @@ header .navencabezado ul li {
 header .navencabezado ul li a {
   font-family: "Oswald", sans-serif;
   border: none;
-  background-image: linear-gradient(to bottom, rgb(67, 82, 41), rgb(76, 95, 42));
+  background-image: none;
   color: white;
   font-size: 120%;
   margin-right: 12px;
   text-decoration: none;
-  border-radius: 45%;
+  border-radius: 25%;
   padding: 7px;
   margin-bottom: 5px;
-  transition: 3s;
+  transition: 1s;
 }
 header .navencabezado ul li a:hover {
-  background-image: linear-gradient(to top, rgb(67, 82, 41), rgb(76, 95, 42));
+  background: #1b5f14;
 }
 header img {
   width: 80px;
@@ -197,6 +201,7 @@ header img {
 }
 
 footer {
+  height: 40%;
   display: grid;
   grid-template-areas: "redes . copy";
   grid-template-columns: 30% 30% 30%;
@@ -208,6 +213,12 @@ footer .logosredes img {
 footer .copyright {
   grid-area: copy;
   text-align: right;
+}
+footer .subir {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 40px;
 }
 
 @media (max-width: 480px) {

@@ -15,6 +15,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     .titulonoti{
         grid-area: titulo;
         font-size: 2rem;
@@ -24,7 +25,7 @@
     .textonoti1 {
         grid-area: texto1;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-left: 30px;
     }
     .textonoti2{
