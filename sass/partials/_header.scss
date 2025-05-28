@@ -85,6 +85,18 @@ footer{
         grid-area: copy;
         text-align: right;
     }
+    .logosredes2{
+        img{
+            grid-area: redes;
+            width: 40px;
+            filter: invert(1);
+        }
+    }
+    .copyright2{
+        grid-area: copy;
+        text-align: right;
+        filter: invert(1);
+    }
     .subir{
         position: fixed;
         bottom: 70px;
