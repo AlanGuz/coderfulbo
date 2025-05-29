@@ -3,7 +3,7 @@
         flex-direction: column;
         img{
         width: 45px;
-        margin-left: 195px;
+        margin-left: 50%;
         }
         .navencabezado{
         width: 100%;
@@ -109,6 +109,89 @@
         }    
         .copyright{
         font-size: 8px
-        } 
+        }
+        .logosredes2{
+            img{
+            width: 15px;
+            margin-left: 23px;
+            }
+        }
+        .copyright2{
+            font-size: 8px
+        }
     }
+}
+@media (min-width:481px) and (max-width:769px) {
+    header{
+        flex-direction: column;
+        img{
+        width: 45px;
+        margin-left: 50%;
+        }
+        .navencabezado{
+        width: 100%;
+        padding-bottom: 0.2px;
+           ul{
+           justify-content: baseline;
+           align-items: center;    
+           padding: 12px;
+           padding-bottom: 5PX;
+           margin-top: 10px;
+              a{ 
+              border: none;
+              background-color: darkolivegreen;
+              }
+           }      
+        }
+    }
+    .cuerponoticias{
+        .textonoti1{
+        font-size: 17px;
+        }
+        .imgnoti1{
+            height: 70%;
+        }
+        .textonoti2{
+        font-size: 15px;
+        text-align: center;
+        margin-right: 10px;
+        }
+        .textonoti3{
+        font-size: 15px;
+        text-align: left;
+        margin-left: 32px;
+        }
+        .imgnoti2{
+        margin-bottom: 10px;
+        width: 90%;
+        height: 70%;
+        margin-left: 110px;
+        }
+        .imgnoti3{
+            height: 80%;
+        }
+        .imgnoti4{
+            height: 80%;
+        }
+    }
+    .row{
+        padding: 150px;
+        margin-top: -130px;
+    }
+    .fotoscompe{
+        padding: 10px;
+        margin-right: 60px;
+        .libertadores{
+            img{
+              width: 70%;
+              height: 50%;
+
+            }
+        }
+    }
+
+
+    
+
+
 }          

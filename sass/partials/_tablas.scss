@@ -9,5 +9,6 @@
     }
     .tablas{
         @include tablitas;
+        margin-bottom: 50px;
     }
 }
